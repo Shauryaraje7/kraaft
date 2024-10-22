@@ -1,0 +1,147 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    /* background-image: url('assets/Screenshot\ 2024-10-21\ 003525.png'); Replace with correct image path */
+    background-size: cover;
+    background-position: center;
+    color: rgb(174, 25, 25);
+    padding: 20px;
+    position: relative;
+    overflow: auto;
+    width: 100%;
+    
+}
+
+.cast-crew-section {
+    flex: 1;
+    padding-left: 50px;
+    
+    display:block;
+    
+    text-align: left ;
+    margin-top: 20vh;
+
+    height: 100%;
+}
+
+.cast-crew-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    
+    padding-bottom: 10px;
+}
+
+.cast h3, .crew h3 {
+    font-size: 2rem;
+    margin-top: 15px;
+}
+
+/* ul {
+    list-style-type: none;
+} */
+
+ul li {
+    font-size: 1.2rem;
+    line-height: 2;
+}
+/* ul li ul{
+    
+} */
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    
+}
+
+/* Right side image section */
+.image-section {
+    flex: 1;
+    position: relative;
+    text-align: right;
+    padding-right: 50px;
+    padding-top: 30px;
+    font-size: 36px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+    }
+
+
+/* Responsive Design for max-width 768px */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+        height: auto;
+    }
+
+    .image-section h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+        font-weight: bolder;
+    }
+
+    .cast-crew-section {
+        margin-top: 5vh;
+        max-width: 100%;
+        padding: 15px;
+       
+    }
+
+    .cast-crew-title {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        padding-bottom: 8px;
+    }
+
+    .cast h3, .crew h3 {
+        font-size: 1.5rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    ul li ul li {
+        font-size: 0.9rem;
+    }
+
+    /* Centering the content */
+    ul {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+
+    .image-section {
+        order: -1; /* Move the image section above the cast & crew */
+        margin-top: 5vh;
+        left: 25%;
+        position: static;
+        
+    }
+}
+

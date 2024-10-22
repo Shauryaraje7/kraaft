@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- =============nav-bar starts here ============================= -->
+    <header>
+        <!-- Navbar Section -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Jadoo</a>
+            </div>
+            <ul class="nav-links">
+                <!-- Close Button -->
+                <li class="close-btn" id="close-btn">&times;</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#Film">FILMS</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">SERVICES</a></li>
+
+            </ul>
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+    </header>
+    <!-- =============nav-bar ends here ============================= -->
+    <!-- =================first-page Films details================== -->
+    <section class="film-details">
+        <div class="text">
+            <h2 class="film-title">Films</h2>
+            <p class="release-info">Released on YouTube, 28 Dec 2023</p>
+        </div>
+        <div class="film-info-container">
+            <div class="film-poster">
+                <img src="assets/akshri paper.png" alt="Aakhri Paper Poster">
+            </div>
+            <div class="film-description">
+                <h3>Aakhri Paper</h3>
+                <p class="film-genres">Feel Good &nbsp;|&nbsp; Slice of Life &nbsp;|&nbsp; Drama</p>
+                <p class="film-summary">
+                    When the pressure of exams weighs heavy, one student's frustration hits its peak in Aakhri Paper.
+                    But when a close friend steps in, with calm understanding and a heart-to-heart conversation,
+                    he learns that life is much more than a few marks on a piece of paper. As they talk, this soulful
+                    story unfolds—
+                    <span id="dots">...</span>
+                    <span id="moreContent">
+                        showing us the true value of friendship and the reminder that success isn’t defined by grades.
+                        In this heartwarming film, discover the power of perspective in a world that often feels
+                        overwhelming.
+                        Cast and Crew
+                    </span>
+                    <a href="javascript:void(0)" onclick="toggleReadMore()" id="readMoreLink">Click here to read
+                        more</a>
+                </p>
+                <div class="film-stills">
+                    <img class="horizontal-img" src="assets/AAkhri paper Still1.png" alt="Still 1 from Aakhri Paper">
+                    <img class="horizontal-img" src="assets/AAkhri paper Still2.png" alt="Still 2 from Aakhri Paper">
+                    <img class="horizontal-img" src="assets/AAkhri paper page 2 back ground.png" alt="Still 3 from Aakhri Paper">
+                </div>
+            </div>
+
+        </div>
+
+        <p class="stills-caption">Stills from the Film</p>
+    </section>
+    <!-- =================first-page Films details================== -->
+    <!-- =================second-page Films details================== -->
+    <section  style="  color: white;  background-image: url(assets/AAkhri\ paper\ page\ 2\ back\ ground.png);"  class="film-details-page2">
+        <div class="text-page2 text ">
+            <h2 class="film-title">Films</h2>
+            <p  class="release-info">Released on YouTube, 28 Dec 2023</p>
+        </div>
+        <div class=" film-info-container  film-info-container-page2">
+            <div class="film-poster">
+                <!-- <img src="assets/akshri paper.png" alt="Aakhri Paper Poster"> -->
+            </div>
+            <div class="film-description">
+                <h3 class="second-page-title" style="font-size: 50px;">Aakhri Paper</h3>
+                <p class="film-genres">Feel Good &nbsp;|&nbsp; Slice of Life &nbsp;|&nbsp; Drama</p>
+                <p class="film-summary">
+                    When the pressure of exams weighs heavy, one student's frustration hits its peak in Aakhri Paper.
+                    But when a close friend steps in, with calm understanding and a heart-to-heart conversation, he
+                    learns that life is much more than a few marks on a piece of paper. As they talk, this soulful story
+                    unfolds—showing us the true value of friendship and the reminder that success isn’t defined by
+                    grades. In this heartwarming film, discover the power of perspective in a world that often feels
+                    overwhelming.
+                    Cast and Crew
+                </p>
+                <!-- <div class="film-stills">
+                <img  class="horizontal-img"  src="assets/horizontal dummy.png" alt="Still 1 from Aakhri Paper">
+                <img  class="horizontal-img"  src="assets/horizontal dummy.png" alt="Still 2 from Aakhri Paper">
+                <img  class="horizontal-img"  src="assets/horizontal dummy.png" alt="Still 3 from Aakhri Paper">
+            </div> -->
+            </div>
+
+        </div>
+
+        <p class="stills-caption"><br></p>
+    </section>
+    <!-- =================second-page Films details================== -->
+    <!-- =================cast and crew details================== -->
+    <div class="container">
+        <div class="cast-crew-section">
+            <h2 class="cast-crew-title">Cast & Crew</h2>
+
+            <div class="cast">
+                <h3>Cast</h3>
+                <ul>
+                    <li>Soumyadeep Mukherjee</li>
+                    <li>Mihika Agashe</li>
+                </ul>
+            </div>
+
+            <div class="crew">
+                <h3>Crew</h3>
+                <ul>
+                    <br>
+                    <li><strong>Written & Directed by:</strong> </li>
+                    <ul>Rachit Vaishnav</ul>
+                    <br>
+                    <li><strong>Produced by:</strong> </li>
+                    <ul>Lakshya Kotwani</ul>
+                    <br>
+                    <li><strong>Camerawork:</strong> </li>
+                    <ul>Kalpak Dorlikar,<br> Shambhavi Patil,<br> Kushagra Dwivedi</ul>
+                    <br>
+                    <li><strong>Editing & Processing:</strong> </li>
+                    <ul>Kushagra Dwivedi</ul>
+
+                    <br>
+                    <li><strong>Graphics:</strong> </li>
+                    <ul>Rachit Vaishnav</ul>
+                    <br>
+
+                    <li><strong>Skills by:</strong> </li>
+                    <ul>Shambhavi Patil, Kalpak Dorlikar</ul>
+                </ul>
+            </div>
+        </div>
+
+        <div class="image-section">
+            <h1>Aakhri Paper</h1>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- =================cast and crew details================== -->
+
+
+</body>
+<script src="scripts.js"></script>
+
+</html>

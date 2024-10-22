@@ -1,0 +1,134 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Georgia', serif;
+    height: 100%;
+    background: none; /* Fallback color */
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Policy container with background image */
+.policy-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-image: url('assets/Screenshot\ 2024-10-21\ 024533.png'); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Adding a dark overlay to improve readability */
+.policy-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay to make the text readable */
+    z-index: -1; /* Places the overlay behind the content */
+}
+
+.policy-content {
+    max-width: 1100px;
+    padding: 10px;
+    /* background: rgba(0, 0, 0, 0.8); Slight transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 0 15px; /* Adds some margin on smaller screens */
+}
+
+/* Policy title */
+.policy-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px black;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+/* Policy text */
+.policy-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .policy-title {
+        font-size: 2.5rem;
+    }
+
+    .policy-text {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 768px) {
+    .policy-container {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .policy-title {
+        font-size: 2rem;
+    }
+
+    .policy-text {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .policy-content {
+        padding: 25px;
+        margin: 0 10px; /* More margin for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .policy-container {
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    .policy-title {
+        font-size: 1.8rem;
+    }
+
+    .policy-text {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .policy-content {
+        padding: 20px;
+        margin: 0 5px; /* Tighter margin for small devices */
+    }
+}
+
+/* For extra small screens (below 480px) */
+@media (max-width: 480px) {
+    .policy-title {
+        font-size: 1.5rem;
+    }
+
+    .policy-text {
+        font-size: 0.85rem;
+        line-height: 1.3;
+    }
+}
